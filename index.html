@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Creative Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { background-color: #0f172a; color: #f1f5f9; font-family: 'Inter', sans-serif; }
+        .navbar { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(10px); }
+        .hero-section { padding: 100px 0; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+        .profile-img { width: 150px; height: 150px; border-radius: 50%; border: 4px solid #38bdf8; object-fit: cover; }
+        .card { background: #1e293b; border: none; color: white; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); border: 1px solid #38bdf8; }
+        .btn-primary { background-color: #38bdf8; border: none; }
+        .btn-primary:hover { background-color: #0ea5e9; }
+        .tech-stack i { font-size: 2rem; margin: 10px; color: #94a3b8; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DEV.PORTAL</a>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <img src="foto5.jpg" class="profile-img mb-4" alt="Profile">
+            <h1 class="display-4 fw-bold">Halo, Saya <span style="color: #38bdf8;">Arif Angga</span></h1>
+            <p class="lead text-secondary">Tech Enthusiast | Termux Explorer | Junior Developer</p>
+            <div class="mt-4">
+                <a href="https://wa.me/083139715134" class="btn btn-primary btn-lg px-4 me-2"><i class="fab fa-whatsapp"></i> Kontak Saya</a>
+                <a href="#projek" class="btn btn-outline-light btn-lg px-4">Lihat Projek</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projek" class="container py-5">
+        <h2 class="text-center mb-5">Projek Saya</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-4 h-100">
+                    <h3><i class="fas fa-heart text-danger"></i> Valentine Web</h3>
+                    <p class="text-secondary">Website interaktif dengan album foto dan efek animasi untuk momen spesial.</p>
+                    <span class="badge bg-secondary w-25">HTML / CSS</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card p-4 h-100">
+                    <h3><i class="fas fa-server text-info"></i> Termux Server</h3>
+                    <p class="text-secondary">Mengonversi smartphone Android menjadi web server lokal menggunakan Python.</p>
+                    <span class="badge bg-secondary w-25">Linux / Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5 border-top border-secondary">
+        <p class="text-secondary">&copy; 2026 Made with ❤️ in Termux</p>
+        <div class="tech-stack">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-linux"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
